@@ -17,7 +17,7 @@ void main() {
     channel.setMockMethodCallHandler(null);
   });
 
-  test('getPlatformVersion', () async {
-    expect(await FlutterAuthUiWeb.platformVersion, '42');
+  test('startUi', () async {
+    expect(await FlutterAuthUi.startUi([], TosAndPrivacyPolicy("", "")), true);
   });
 }
